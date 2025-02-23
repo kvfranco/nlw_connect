@@ -1,79 +1,93 @@
-# NLW Connect - Software de Indicação para Eventos
+# NLW Connect - Event Referral Software
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Projeto desenvolvido durante a **NLW Connect**, realizada de **17 a 23 de fevereiro de 2025** — uma semana intensiva de aprendizado e desenvolvimento. Este software de indicação para eventos permite que os usuários acessem seus ingressos, gerem links de convite, acompanhem cliques e cadastros realizados por meio desses links e visualizem sua posição no ranking de indicações.
+📄 [Leia em Português](README.pt-BR.md)
 
-## 🚀 Funcionalidades
+Project developed during **NLW Connect**, held from **February 17 to 23, 2025** — an intensive week of learning and development. This event referral software allows users to access their tickets, generate invitation links, track clicks and sign-ups through these links, and view their position on the referral leaderboard.
 
-- **Formulário de Inscrição:** Permite que o usuário se inscreva no evento.
-- **Link de Convite:** Após a inscrição, é gerado um link único para convidar outras pessoas.
-- **Estatísticas de Convites:**
-  - Número de cliques no link de convite.
-  - Número de pessoas cadastradas através do link.
-  - Posição atual no ranking de indicações.
-- **Ranking de Indicações:** Exibe os três primeiros colocados no ranking.
+## 🚀 Features
 
-## 🛠️ Tecnologias Utilizadas
+- **Registration Form:** Allows users to register for the event.
+- **Invitation Link:** A unique link is generated after registration to invite others.
+- **Invitation Statistics:**
+  - Number of clicks on the invitation link.
+  - Number of people who signed up through the link.
+  - Current position on the referral leaderboard.
+- **Referral Leaderboard:** Displays the top three users on the leaderboard.
+
+## 🛠️ Technologies Used
 
 ### Back-End
-- **Node.js:** Ambiente de execução JavaScript.
-- **Fastify:** Framework web rápido e eficiente.
-- **TypeScript:** Tipagem estática para maior segurança e produtividade.
-- **Drizzle ORM:** ORM moderno para interação com o banco de dados.
-- **Zod:** Validação de dados com TypeScript.
-- **Docker:** Contêinerização dos serviços de PostgreSQL e Redis.
-- **Swagger:** Documentação da API.
+
+- **Node.js:** JavaScript runtime environment.
+- **Fastify:** Fast and efficient web framework.
+- **TypeScript:** Static typing for enhanced safety and productivity.
+- **Drizzle ORM:** Modern ORM for database interaction.
+- **Zod:** Data validation with TypeScript.
+- **Docker:** Containerization of PostgreSQL and Redis services.
+- **Swagger:** API documentation.
 
 ### Front-End
-- **React:** Biblioteca para construção de interfaces de usuário.
-- **Next.js:** Framework React com suporte a SSR e SSG.
-- **TypeScript:** Tipagem estática para o front-end.
-- **Tailwind CSS:** Framework CSS utilitário para estilização.
-- **React Hook Form:** Gerenciamento de formulários.
-- **Orval:** Geração de clientes HTTP para APIs.
 
-## 📋 Pré-requisitos
+- **React:** Library for building user interfaces.
+- **Next.js:** React framework with SSR and SSG support.
+- **TypeScript:** Static typing for the front-end.
+- **Tailwind CSS:** Utility-first CSS framework for styling.
+- **React Hook Form:** Form management.
+- **Orval:** HTTP client generation for APIs.
 
-Antes de começar, certifique-se de ter instalado:
+## 📋 Prerequisites
 
-- [Node.js](https://nodejs.org/) (v20 ou superior)
-- [Docker](https://www.docker.com/) (para rodar o PostgreSQL e o Redis)
-- [Git](https://git-scm.com/) (para clonar o repositório)
+Before starting, make sure you have installed:
 
-## 💻 Como Rodar o Projeto
+- [Node.js](https://nodejs.org/) (v20 or later)
+- [Docker](https://www.docker.com/) (to run PostgreSQL and Redis)
+- [Git](https://git-scm.com/) (to clone the repository)
 
-Siga os passos abaixo para configurar e executar o projeto localmente.
+## 💻 How to Run the Project
 
-### 1. Clone o repositório
+Follow the steps below to set up and run the project locally.
+
+### 1. Clone the Repository
+
 ```bash
   git clone https://github.com/kvfranco/nlw_connect.git
   cd nlw_connect
 ```
 
-### 2. Configurando o Back-End
+### 2. Setting up the Back-End
+
 ```bash
   cd backend
   npm install
-  docker compose up -d  # Baixa as imagens e cria os containers do PostgreSQL e Redis
-  docker ps             # Verifique se os containers estão rodando
+  docker compose up -d  # Download images and create PostgreSQL and Redis containers
+  docker ps             # Check if the containers are running
   npm run dev
 ```
 
-> **Atenção:** O arquivo `.env` possui as configurações padrão para execução local. Altere conforme necessário.
+> **Note:** The `.env` file contains the default settings for local execution. Modify as needed.
 
-### 3. Configurando o Front-End
+### 3. Setting up the Front-End
+
 ```bash
   cd ../frontend
   npm install
   npm run dev
 ```
 
-### 4. Acesse a Aplicação
-A aplicação estará acessível em:
+### 4. Access the Application
+
+The application will be available at:
+
 - [http://localhost:3000](http://localhost:3000)
 
-### 5. Documentação da API
+### 5. API Documentation
 
-As rotas da API estão documentadas no Swagger, acessível em:
+The API routes are documented in Swagger, accessible at:
+
 - [http://localhost:3333/docs](http://localhost:3333/docs)
+
+## 📜 Certificates  
+- [Back-End Development - NLW Connect](https://app.rocketseat.com.br/certificates/3f99ec15-9cc3-4525-900c-872c29b1db72)  
+- [Front-End Development - NLW Connect](https://app.rocketseat.com.br/certificates/eb7b4a4b-01c9-486f-b1eb-a717bcb17298)
